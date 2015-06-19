@@ -10,11 +10,11 @@ if(momHeight > 0 && momHeight != 0){ //If  mother's height larger than zero cont
     console.log(momHeight)
     var dadHeight = prompt("What is you father's height in ft");//Prompt father's height
     console.log(dadHeight);
-    if(dadHeight > 0){alert("Thank you") //Thank for proper entry
+    if(dadHeight > 0 && dadHeight != 0){alert("Thank you") //Thank for proper entry
         console.log(dadHeight)
         var myHeight = prompt("What is your height");//Prompt your height
         console.log(myHeight)
-        if(myHeight > 0){alert("Thank you") //Thanks for proper entry
+        if(myHeight > 0 && myHeight != 0){alert("Thank you") //Thanks for proper entry
             console.log(myHeight)
         }else{alert("Invalid entry \nPlease restart") //Invalid entry
 
@@ -33,9 +33,9 @@ var result = ("Your family average height is " + averageHeight + "ft") //Final r
 alert(result) //Average of family height
 //My calculation on the family average height
 //Mother 5 ft
-//Father 6.9 ft
-//Mine 5.5 ft
-//The average height for the family was 5.8 ft
+//Father 5.9 ft
+//Mine 5.6 ft
+//The average height for the family was 5.5 ft
 
 
 
