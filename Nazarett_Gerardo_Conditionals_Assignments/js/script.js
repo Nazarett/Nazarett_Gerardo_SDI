@@ -6,7 +6,7 @@ alert("We are calculating the average height of your family"); //Alert to inform
 var momHeight = prompt("What is your mother's height in ft?"); //Prompt for mother's height
     console.log(momHeight);
         (momHeight > 0) ? alert("Thank you"):alert("Invalid entry"); //Example of ternary operator
-if(momHeight > 0){ //If  mother's height larger than zero continue
+if(momHeight > 0 && momHeight != 0){ //If  mother's height larger than zero continue
     console.log(momHeight)
     var dadHeight = prompt("What is you father's height in ft");//Prompt father's height
     console.log(dadHeight);
@@ -27,10 +27,15 @@ if(momHeight > 0){ //If  mother's height larger than zero continue
 }else{ alert("Please restart") //Invalid entry
 
 }
-var averageHeight = momHeight += dadHeight += myHeight; //Trying to calculate average
+var averageHeight = (Number(momHeight) + Number(dadHeight) + Number(myHeight)) / 3; //Calculating average
 console.log(averageHeight)
 var result = ("Your family average height is " + averageHeight + "ft") //Final result
-alert(result)
+alert(result) //Average of family height
+//My calculation on the family average height
+//Mother 5 ft
+//Father 6.9 ft
+//Mine 5.5 ft
+//The average height for the family was 5.8 ft
 
 
 
