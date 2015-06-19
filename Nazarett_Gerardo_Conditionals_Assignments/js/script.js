@@ -27,10 +27,10 @@ if(momHeight > 0){ //If  mother's height larger than zero continue
 }else{ alert("Please restart")
 
 }
-averageHeight = (momHeight + dadHeight + myHeight) / 3;
+averageHeight = (momHeight) + (dadHeight) + (myHeight);
 console.log(averageHeight)
-alert("Your family average height is " + averageHeight + "ft")
-
+var result = ("Your family average height is " + averageHeight + "ft")
+alert(result)
 
 
 
