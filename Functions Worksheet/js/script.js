@@ -9,4 +9,6 @@ var calcCircumference = function(Pi, radius){ //Adding function
 
 var c = calcCircumference(3.14, 5) //Adding variable c with values
 
-console.log(c)
+console.log("The circumference of the circle is " + c)
+
+//
