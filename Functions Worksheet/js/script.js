@@ -11,4 +11,6 @@ var c = calcCircumference(3.14, 5) //Adding variable c with values
 
 console.log("The circumference of the circle is " + c)
 
-//
+//Stung!
+
+var camelWeight = 720 
