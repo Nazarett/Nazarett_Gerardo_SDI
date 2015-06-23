@@ -20,3 +20,5 @@ var calcCamelStings = function(camelWeight, stingsPerLbs){ //Function for camel 
     return camelStings; //Return value
 
 }
+
+var s = calcCamelStings(720, 8.666666667)
