@@ -6,6 +6,6 @@ var calcCircumference = function(Pi, radius){ //Adding function
     return circumference;
 }
 
-var c = calcCircumference(3.14, 5)
+var c = calcCircumference(3.14, 5) //Adding variable c with values
 
 console.log(c)
