@@ -21,5 +21,5 @@ var calcCamelStings = function(camelWeight, stingsPerLbs){ //Function for camel 
 
 }
 
-var s = calcCamelStings(720, 8.666666667) //Adding variable s with values
-console.log("It takes " + c + "bee stings to kill this animal. ") //Console log plus message
+var s = calcCamelStings(720, 8.666666667); //Adding variable s with values
+console.log("It takes " + c + "bee stings to kill this animal. "); //Console log plus message
