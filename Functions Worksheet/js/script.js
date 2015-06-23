@@ -8,3 +8,4 @@ var calcCircumference = function(Pi, radius){
 
 var c = calcCircumference(3.14, 5)
 
+console.log(c)
