@@ -13,5 +13,5 @@ console.log("The circumference of the circle is " + c)
 
 //Stung!
 
-var camelWeight = 720
+var camelWeight = 720 //Camel weight
 var stingsPerLbs = 8.666666667
