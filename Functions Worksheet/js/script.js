@@ -16,5 +16,6 @@ console.log("The circumference of the circle is " + c)
 var camelWeight = 720 //Camel weight
 var stingsPerLbs = 8.666666667 // Stings per pound
 var calcCamelStings = function(camelWeight, stingsPerLbs){ //Function for camel stings
+    var camelStings = camelWeight * stingsPerLbs //Camel sting formula
 
 }
