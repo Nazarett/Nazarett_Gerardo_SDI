@@ -21,4 +21,4 @@ var calcCamelStings = function(camelWeight, stingsPerLbs){ //Function for camel 
 
 }
 
-var s = calcCamelStings(720, 8.666666667)
+var s = calcCamelStings(720, 8.666666667) //Adding variable s with values
