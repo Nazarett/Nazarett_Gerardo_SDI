@@ -3,3 +3,5 @@
 
 var calcCircumference = function(Pi, raidus){
     var circumference = 2 * Pi * radius
+    return circumference;
+}
