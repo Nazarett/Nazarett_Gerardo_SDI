@@ -1,7 +1,7 @@
 //Circumference
 //Calculate the circumference of a circle
 
-var calcCircumference = function(Pi, radius){
+var calcCircumference = function(Pi, radius){ //Adding function
     var circumference = 2 * Pi * radius
     return circumference;
 }
