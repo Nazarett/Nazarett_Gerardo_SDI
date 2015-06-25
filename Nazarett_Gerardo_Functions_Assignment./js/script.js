@@ -11,22 +11,25 @@ var secondNum
 var thirdNum
 var fourthNum
 var fifthNum
+
 //Functions
 
-function lotteryNum(min, max){
+function lotteryNumOne (max, min, num){
 
- var numOne = [];
+ var arrayOne = [];
 
- for (var a = 1; a < 54; a++){
+ for (var a = 1; a < num; a++) {
 
-  var random1 = Math.max(53);
-  numOne[a] = Math.round(random1);
+  var randomOne = Math.random() * (max - min) + min;
+  arrayOne[a] = Math.round(randomOne);
  }
- return numOne
+
+ return arrayOne;
 }
 
 
 //Code
+firstNum = lotteryNumOne (1, 53, 2);
 
-firstNum =lotteryNum(1, 53)
-alert("Your first number is " + firstNum )
+alert("Your first number is " + firstNum);
+
