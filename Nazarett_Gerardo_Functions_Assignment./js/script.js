@@ -6,30 +6,16 @@ Functions Assignment
 */
 
 //Variables
-var firstNum;
-var secondNum
-var thirdNum
-var fourthNum
-var fifthNum
-
+var p = ("Powerball");
+var f = ("Flordia lottery");
+var selectionOne = prompt ("Would you like to play " + p );
+var selectionTwo =
 //Functions
 
-function lotteryNumOne (max, min, num){
+function selectionValidation(Lottery){
 
- var arrayOne = [];
-
- for (var a = 1; a < num; a++) {
-
-  var randomOne = Math.random() * (max - min) + min;
-  arrayOne[a] = Math.round(randomOne);
- }
-
- return arrayOne;
+ console.log("You choose ");
 }
 
-
 //Code
-firstNum = lotteryNumOne (1, 53, 2);
-
-alert("Your first number is " + firstNum);
-
+selectionValidation(selectionOne);
