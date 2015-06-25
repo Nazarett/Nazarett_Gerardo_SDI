@@ -10,7 +10,11 @@ var myNum = prompt("Please choose your first \n number between 1 and 53"); //Var
 
 //Functions
 function numApproval(numSelected){
-    
+
+    if (numSelected  === 1) {
+        numSelected = prompt("Invalid entry please try again");
+    }
+    console.log("Your first number is " + numSelected + ".")
 }
 
 //Code
