@@ -12,7 +12,7 @@ var c = calcCircumference(3.14, 5); //Adding variable c with values
 console.log("The circumference of the circle is " + c + "."); //Console log plus message
 
 //Stung!
-//
+
 
 var camelWeight = 720; //Camel weight
 var stingsPerLbs = 8.666666667; // Stings per pound
