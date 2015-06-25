@@ -9,6 +9,9 @@ Functions Assignment
 var myNum = prompt("Please choose your first \n number between 1 and 53") //Variable with prompt to choose a number
 
 //Functions
+function numApproval(numSelected){
 
+}
 
 //Code
+
