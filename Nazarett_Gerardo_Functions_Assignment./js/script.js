@@ -6,17 +6,30 @@ Functions Assignment
 */
 
 //Variables
-var myNum = prompt("Please choose your first \n number between 1 and 53"); //Variable with prompt to choose a number
+var myFirstNum = prompt("Please choose your first \nnumber between 1 and 53"); //Variable with prompt to choose a number
 
 //Functions
-function numApproval(numSelected){
+function numApproval(num1Selected){
 
-    if (numSelected  === 1) {
-        numSelected = prompt("Invalid entry please try again");
+    var click = 1
+
+    while (num1Selected === "" ) {
+
+        num1Selected = prompt("Invalid entry please try again");
+
+        click++;
+
+        if(click === 3){
+
+            console.log("You maxed out attempts")
+            break;
+
+        }
     }
-    console.log("Your first number is " + numSelected + ".")
+
+    console.log("Your first number is " + num1Selected + ".")
 }
 
 //Code
 
-numApproval(myNum);
+numApproval(myFirstNum);
