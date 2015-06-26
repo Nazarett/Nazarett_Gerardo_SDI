@@ -27,7 +27,7 @@ function selectionValidationOne(lotteryOne) { //Starting function
 
   if(clicks === 3){ // clicks conditions
 
-   console.log("Enough times leaving blanks.") //message for limit of clicking
+   console.log("Enough times leaving blanks."); //message for limit of clicking
    break; // break will stop infinite loop
 
   }
