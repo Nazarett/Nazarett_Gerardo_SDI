@@ -6,11 +6,12 @@ Functions Assignment
 */
 
 //Variables
-//alert ("Welcome, ready to play Powerball or Florida Lottery"); //Alert to welcome user and giving him information for whats next
 
-//var tickets = prompt ("Would you like to play \nPowerball or Florida lottery \nPlease type your answer"); //variable with prompt
+//var tickets = prompt ("What numbers would you like to know \nPowerball or Florida lottery \nPlease type your choice"); //variable with prompt
 
 var myLotNum;
+
+var myPowerNum;
 
 //Functions
 
@@ -39,28 +40,52 @@ return lotteryOne; //returning values of lotteryOne back to code
 
 //Lottery function assuming user choose Florida Lottery
 
-function lotteryNum (min, max){
+function lotteryNum (min, max){ //Function for florida lottery numbers
 
 
- var randomNum = Math.random() * (max -min) + min;
+ var randomNum = Math.random() * (max - min) + min; ///Variable for random numbers with math formula for random numbers
 
-randomNum = Math.round(randomNum);
+randomNum = Math.round(randomNum); //Formula to round up number with no decimals
 
- return randomNum;
+ return randomNum; //return value to code
 
 }
 
+//Lottery function assuming user choose Powerball
 
+function powerNum (min, max){
+
+ var differentNum = Math.random() * (max - min) + min;
+
+ differentNum = Math.round(differentNum);
+
+ return differentNum;
+}
 //Code
 //tickets = selectionValidationOne(tickets);
 //console.log("Congratulations you choose " + tickets + " .") //Message leting user kow his selection
+
+
  myLotNum = lotteryNum(1, 13);
-console.log(myLotNum);
+console.log("Your first Florida lottery number is " + myLotNum);
 myLotNum = lotteryNum(14, 23);
-console.log(myLotNum);
+console.log("Your second Florida lottery number is " +myLotNum);
 myLotNum = lotteryNum(24, 33);
-console.log(myLotNum);
+console.log("Your third Florida lottery number is " + myLotNum);
 myLotNum = lotteryNum(36, 43);
-console.log(myLotNum);
+console.log("Your fourth Florida lottery number is " +myLotNum);
 myLotNum = lotteryNum(44, 53);
-console.log(myLotNum);
+console.log("Your fifth Florida lottery number is " +myLotNum);
+
+
+
+myPowerNum = powerNum(1, 13);
+console.log(myPowerNum);
+myPowerNum = powerNum(14, 23);
+console.log(myPowerNum);
+myPowerNum = powerNum(24, 33);
+console.log(myPowerNum);
+myPowerNum = powerNum(36, 43);
+console.log(myPowerNum);
+myPowerNum = powerNum(44, 53);
+console.log(myPowerNum);
