@@ -43,29 +43,29 @@ return lotteryOne; //returning values of lotteryOne back to code
 function lotteryNum (min, max){ //Function for florida lottery numbers
 
 
- var randomNum = Math.random() * (max - min) + min; ///Variable for random numbers with math formula for random numbers
+ var randomNum = Math.random() * (max - min) + min; //Variable for random numbers with math formula for random numbers
 
 randomNum = Math.round(randomNum); //Formula to round up number with no decimals
 
  return randomNum; //return value to code
 
-}
+}/
 
 //Lottery function assuming user choose Powerball
 
-function powerNum (min, max){
+function powerNum (min, max){ //Function for Powerball numbers
 
- var differentNum = Math.random() * (max - min) + min;
+ var differentNum = Math.random() * (max - min) + min; //Variable for random numbers with math formula for random numbers
 
- differentNum = Math.round(differentNum);
+ differentNum = Math.round(differentNum); //Formula to round up number with no decimals
 
- return differentNum;
+ return differentNum; //return value to code
 }
 //Code
 //tickets = selectionValidationOne(tickets);
 //console.log("Congratulations you choose " + tickets + " .") //Message leting user kow his selection
 
-
+//Results of random numbers for Florida lottery
  myLotNum = lotteryNum(1, 13);
 console.log("Your first Florida lottery number is " + myLotNum);
 myLotNum = lotteryNum(14, 23);
@@ -78,14 +78,16 @@ myLotNum = lotteryNum(44, 53);
 console.log("Your fifth Florida lottery number is " +myLotNum);
 
 
-
-myPowerNum = powerNum(1, 13);
-console.log(myPowerNum);
-myPowerNum = powerNum(14, 23);
-console.log(myPowerNum);
-myPowerNum = powerNum(24, 33);
-console.log(myPowerNum);
-myPowerNum = powerNum(36, 43);
-console.log(myPowerNum);
-myPowerNum = powerNum(44, 53);
-console.log(myPowerNum);
+//Results of random numbers for Powerball
+myPowerNum = powerNum(1, 19);
+console.log("Your first Powerball lottery number is " + myPowerNum);
+myPowerNum = powerNum(20, 29);
+console.log("Your second Powerball lottery number is " +myPowerNum);
+myPowerNum = powerNum(30, 39);
+console.log("Your third Powerball lottery number is " +myPowerNum);
+myPowerNum = powerNum(40, 49);
+console.log("Your fourth Powerball lottery number is " +myPowerNum);
+myPowerNum = powerNum(50, 59);
+console.log("Your fifth Powerball lottery number is " +myPowerNum);
+myPowerNum = powerNum(1, 35);
+console.log("Your Powerball number is " +myPowerNum);
