@@ -8,25 +8,34 @@ Functions Assignment
 //Variables
 alert ("Please choose between Powerball or Florida Lottery");
 
-var Tickets = prompt ("Would you like to play \nPowerball or Florida lottery");
+var tickets = prompt ("Would you like to play \nPowerball or Florida lottery");
 
 
 //Functions
 
 function selectionValidationOne(lotteryOne) {
 
- var click = 1;
+ var clicks = 1;
 
  while (lotteryOne === "") {
 
-  lotteryOne = prompt("Invalid entry");
+  lotteryOne = prompt("Invalid entry.");
+
+  clicks++;
+
+  if(clicks === 3){
+
+   console.log("Enough times leaving blanks.")
+   break;
+
+  }
 
  }
 
- console.log("You choose " + lotteryOne)
+return lotteryOne;
 }
 
 
 //Code
-selectionValidationOne(Tickets);
-
+tickets = selectionValidationOne(tickets);
+console.log("Congratulations you choose " + tickets + " .")
